@@ -1,0 +1,165 @@
+ /* Sivuston body tyyli */
+body{
+    background-color:#F8F9FA;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding-top: 55px; 
+     
+}
+.container-fluid .logo {  
+    width: auto !important;
+    height: 40px !important;
+    margin-right: 10px;
+}
+ /* Etusivun taustakuvan tyyli */
+ .background-image {
+    position: relative; 
+    width: 100%;
+    min-height: 80vh; /* Flexible height for responsiveness */
+    background-image: url('fpage.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    display: flex; /* Ensure content alignment */
+    align-items: center;
+    justify-content: center;
+}
+
+   /* Overlay-tumma kerros taustalle */
+   .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  /* Pääotsikon asetukset/varjostukset */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    z-index: 2; /* Varmistaa, että teksti on päällä */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Lisää varjoa tekstille */
+  }
+
+  h1 {
+    font-size: 48px; /* Voit säätää kokoa tarpeen mukaan */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .navbar.bg-body-tertiary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: #1E2A36 !important;
+    border: 1px solid gray;
+    background: linear-gradient(90deg, #243B4A, #1E2A36);
+}
+  
+.navbar-toggler{
+    border-color: white;
+}
+.navbar-toggler-icon{
+
+    filter: brightness(0) invert(1);
+}
+.navbar-toggler:hover .navbar-toggler-icon {
+    filter: brightness(0.8) invert(0.8);
+}
+
+.navbar .nav-link{
+    color: white !important;
+}
+.navbar {
+    background: linear-gradient(90deg, #243B4A, #1E2A36);
+}
+
+.navbar .nav-link:hover {
+    color: #4FC3F7 !important;
+}
+
+.dropdown-item {
+    color: black !important;
+}
+
+
+
+.container-fluid a {
+    color: white;
+}
+
+.row p {
+
+    font-size: 15px;
+}
+
+
+h1{
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    text-shadow: 0 0 40px gray;
+    font-size:36px;
+    
+}
+.box{
+    min-height: 255px;
+}
+.box .btn {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #1f2e3a;
+    color: white
+
+}
+
+.box .btn:hover {
+    background-color: #4FC3F7;
+    color: white;
+}
+
+footer {
+        
+border: solid 1px gray;
+    
+}
+      
+@media (max-width: 768px) {
+    .background-image {
+        min-height: 60vh; /* Reduce height for smaller screens */
+        min-width: 40vh
+    }
+    .content {
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+    h1 {
+        font-size: 28px; /* Smaller heading size */
+    }
+    p {
+        font-size: 16px; /* Smaller paragraph size */
+    }
+
+    footer {
+        min-width: 40vh; 
+        min-height: 40vh;
+
+    }
+}
